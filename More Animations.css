@@ -1,0 +1,39 @@
+:root {
+    --animation-speed: 0.1s;
+}
+
+.buttonsInner__5126c > .button_f7ecac > div,
+.buttonsInner__5126c > div:not(:last-of-type) {
+    width: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    opacity: 0;
+    transition: min-width var(--animation-speed) ease-out,
+                width     var(--animation-speed) ease-out,
+                height    var(--animation-speed) ease-out,
+                padding   var(--animation-speed) ease-out,
+                opacity   var(--animation-speed) ease-out;
+}
+
+.buttonsInner__5126c:hover > .button_f7ecac:not([aria-label^="Click to "]), /*  Change "Click to" to your language */
+.buttonsInner__5126c:has(
+    > .button_f7ecac:hover ~ .button_f7ecac[aria-label="Add Reaction"], /* Change "Add Reaction" to your language */
+    > [aria-label="Add Reaction"]:hover /*  Change "Add Reaction" to your language */
+) > .button_f7ecac[aria-label^="Click to "] { /*  Change "Click to" to your language */
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    padding: 2px;
+    opacity: 1;
+    > div {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+}
+
+.separator_f84418 {
+    display: none;
+}
