@@ -1,4 +1,4 @@
-.button_f7ecac:has(div),
+.button_f7ecac:has(> div),
 .separator_f84418 {
     width: 0;
     min-width: 0;
