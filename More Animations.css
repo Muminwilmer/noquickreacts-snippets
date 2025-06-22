@@ -13,11 +13,7 @@
                 opacity   var(--animation-speed) ease-out;
 }
 
-.buttonsInner__5126c:hover > .button_f7ecac:not([aria-label^="Click to "]), /*  Change "Click to" to your language */
-.buttonsInner__5126c:has(
-    > .button_f7ecac:hover ~ .button_f7ecac[aria-label="Add Reaction"], /* Change "Add Reaction" to your language */
-    > [aria-label="Add Reaction"]:hover /*  Change "Add Reaction" to your language */
-) > .button_f7ecac[aria-label^="Click to "] { /*  Change "Click to" to your language */
+.buttonsInner__5126c:hover > .button_f7ecac:not([aria-label^="Click to "]){
     width: 24px;
     height: 24px;
     min-width: 24px;
